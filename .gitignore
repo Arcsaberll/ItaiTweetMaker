@@ -1,0 +1,17 @@
+# Unity特有の不要なファイル
+Library/
+Logs/
+Temp/
+Obj/
+*.csproj
+*.sln
+*.userprefs
+
+# ビルドされたゲームファイル
+Builds/
+
+# バージョン管理しないローカル設定
+UserSettings/
+
+# Unity Cloud Buildで使う設定
+[Bb]uild/

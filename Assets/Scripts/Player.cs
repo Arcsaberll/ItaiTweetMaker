@@ -1,19 +1,13 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player(int num, string name) : MonoBehaviour
 {
-    private int playerNum;
-    private string playerName;
-
-    public Player(int num, string name)
-    {
-        playerNum = num;
-        playerName = name;
-    }
+    private string playerName = name;
+    private int score = 0;
 
     public int GetPlayerNum()
     {
-        return playerNum;
+        return num;
     }
 
     public string GetPlayerName()
@@ -24,5 +18,20 @@ public class Player : MonoBehaviour
     public void SetPlayerName(string name)
     {
         playerName = name;
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public void AddScore(int points)
+    {
+        score += points;
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
     }
 }
